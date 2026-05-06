@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Flipkart</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<style>
+      .carousel-container {
+      width:90%;
+      margin:auto;
+    }
+
+    
+    .carousel-item img {
+      height:400px;       
+      object-fit:cover;    
+      border-radius:20px;
+    }
+
+    .card {
+      width:100%; 
+    }
+
+    .card-img-top{
+      height:200px;
+      width:100%;
+      object-fit:cover;
+    }
+
+    .card:hover {
+      transform:translateY(-10px);
+      transition:0.4s;
+    }
+
+    .product-img {
+      height:220px;
+      width:100%;
+      object-fit:cover;
+    }
+
+
+</style>
+
+</head>
+<body>
+  
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-3 sticky-top">
+
+    <a class="navbar-brand fw-bold">
+      <img src="https://pluspng.com/img-png/logo-flipkart-png-flipkart-deals-offers-discounts-and-coupons-online-buy-flipkart-products-at-best-prices-in-india-1200.png" height="50">
+    </a>  
+     
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  
+  <div class="collapse navbar-collapse" id="navContent">
+
+    <form class="d-flex flex-grow-1 mx-3">
+        <input class="form-control rounded-pill" placeholder="Search for Products, Brands and More">
+    </form>
+
+    <div class="d-flex align-items-center gap-4 text-white">
+        <span class="fw-bold">
+        <i class="bi bi-geo-alt me-1"></i> 560102
+        </span>
+
+        
+        <div class="dropdown"> <!-- login -->
+            <a class="nav-link text-white fw-bold dropdown-toggle p-0"
+            data-bs-toggle="dropdown" style="cursor:pointer;">
+            <i class="bi bi-person me-1"></i> Login
+            </a>
+
+           <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-person me-2"></i> My Profile
+                </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-box-seam me-2"></i> Orders
+                </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-heart me-2"></i> Wish Lists
+                </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-gift me-2"></i> Rewards
+                </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-credit-card me-2"></i> Gift Cards
+                </a></li>
+             </ul>
+        </div>
+
+       
+        <div class="dropdown"> <!-- MORE -->
+        <a class="nav-link text-white fw-bold dropdown-toggle p-0"
+            data-bs-toggle="dropdown" style="cursor:pointer;">
+            More
+        </a>
+
+           <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-shop me-2"></i> Become a Seller
+                </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-bell me-2"></i> Notification
+                </a></li>
+
+                <li><a class="dropdown-item" href="#">
+                <i class="bi bi-headset me-2"></i> 24/7 Customer Care
+                </a></li>
+             </ul>
+
+        </div>
+        <!-- CART -->
+            <a class="nav-link text-white fw-bold p-0" href="#">
+            <i class="bi bi-cart3 me-1"></i> Cart
+            </a>
+    </div>
+    </div>
+    
+    </nav>
+    
+
+
+  <!--carousels-->
+  <div class="carousel-container mt-4">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+   
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+   
+
+    <div class="carousel-inner"><!--images-->
+
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img src="https://s3b.cashify.in/gpro/uploads/2022/08/16211949/Upcoming-Sale-on-Flipkart-1024x512.jpg" class="d-block w-100">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://images.news9live.com/wp-content/uploads/2024/10/Flipkart-Diwali-Sale.png" class="d-block w-100">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="3000">
+        <img src="https://www.frengo.com/wp-content/uploads/2024/01/Flipkart-Upcoming-Sale-2024.jpg" class="d-block w-100">
+      </div>
+    </div>
+
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+
+
+
+<div class="Trending p-3" style="margin:20px; background-color:brown; border-radius: 20px;">
+  <h2 class="text-white fw-bold"> <i class="bi bi-fire text-danger me-2"></i>Trending Products</h2>
+
+  <div class="row g-4 mt-2">
+      <div class="col-md-3">
+      <div class="card h-100">
+        <a href="index.html">
+        <img src="https://images.storychief.com/account_22464/2019-11-1_Pebblebee_HolidayFlatlays-3_73261fe1fe63ce4dd868645d9ab6259f_800.jpg" 
+             class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Gadgets</h5>
+          <p class="card-text text-center fw-bold">Early sale live.</p>
+        </div>
+      </div>
+    </div>
+  
+    
+      <div class="col-md-3">
+      <div class="card h-100">
+         <a href="index.html">
+        <img src="https://cdn.mos.cms.futurecdn.net/N9BoSkkyNkLt8hwHi8Y8iM.jpg" 
+             class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Kitchen Accessories</h5>
+          <p class="card-text text-center fw-bold">Flat 50% off</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="card h-100">
+         <a href="index.html">
+        <img src="https://media.istockphoto.com/id/1366299416/photo/kid-toys-collection-isolated-on-blue-background-teddy-bear-wooden-plastic-and-fluffy.jpg?s=612x612&w=0&k=20&c=5q_Jf65dQuG6Tk69pEBkZWGNDoKEjj3ZlYgLjoaiPWc=" 
+             class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Toys</h5>
+          <p class="card-text text-center fw-bold">Up to 30% off</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-3">
+      <div class="card h-100">
+         <a href="index.html">
+        <img src="https://c.ndtvimg.com/2024-01/e8k2e4vo_home-decor_625x300_16_January_24.jpg" 
+             class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h5 class="card-title text-center">Home Decors</h5>
+          <p class="card-text text-center fw-bold">Min.50% off</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container">
+<div class="row p-3" style="margin: 20px; border-radius: 20px; background-color: rgb(186, 198, 239);">
+  <h3 class="mb-4 fw-bold"><i class="bi bi-brush text-pink me-2"></i>Beauty Products</h3>
+
+  <div class="col text-center">
+    <img src="https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?cs=srgb&dl=pexels-oleksandr-p-3800060.jpg&fm=jpg" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Brushes</h4>
+    <h5>&#8377;2,500</h5>
+     <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+
+  <div class="col text-center">
+    <img src="https://i.pinimg.com/originals/e0/19/d8/e019d8315175c999c876ba0daf96379d.jpg" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Shades</h4>
+    <h5>&#8377;10,000</h5>
+     <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+
+  <div class="col text-center">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.YVS2H2uyqQKlg3J100i0egHaE8?r=0&w=1536&h=1024&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Perfumes</h4>
+    <h5>&#8377;25,000</h5>
+     <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+    <div class="col text-center">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.NKu8r3WVHwYXkMY4vhrk8AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Hair Care</h4>
+    <h5>&#8377;999</h5>
+     <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+</div>
+   
+
+
+<div class="row  bg-warning p-3" style="margin: 20px; border-radius: 20px;">
+  <h3 class="mb-4 fw-bold"><i class="bi bi-bag text-primary me-2"></i>Fashion Products</h3>
+
+  <div class="col text-center">
+    <img src="https://blog.fashionphile.com/wp-content/uploads/2022/10/Hero-7.jpg" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Bags</h4>
+    <h5>&#8377;12,999</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+
+  <div class="col text-center">
+    <img src="https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_750,c_limit/598b1b71-33ef-44e8-9da6-1657fc20773d/image.png" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Shoes</h4>
+    <h5>&#8377;10,000</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+
+  <div class="col text-center">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.JdI9IDipMhdwES1hjGVM5wHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Watch</h4>
+    <h5>&#8377;25,000</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+    <div class="col text-center">
+    <img src="https://th.bing.com/th/id/R.7de7387d677661dbe041e71b14b0d6ca?rik=PbRtB5GmKoIb2g&riu=http%3a%2f%2fcdn.notonthehighstreet.com%2ffs%2f30%2fe1%2f1b1c-175f-4ab2-bde3-c1b5ec1a8106%2foriginal_mens-bi-fold-leather-wallet.jpg&ehk=dW78p8ejcmzCVX4dulReBUGa2FRBLK6aS1u6BAy1Un8%3d&risl=&pid=ImgRaw&r=0" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Wallet</h4>
+    <h5>&#8377;1199</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+</div>
+
+
+
+
+
+<div class="row  p-3" style="margin: 20px; border-radius: 20px; background-color: rgb(212, 156, 184);">
+  <h3 class="mb-4 fw-bold"> <i class="bi bi-droplet text-info me-2"></i>Skin Care</h3>
+
+  <div class="col text-center">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/gh-051721-face-wash-1621451242.png?crop=1.00xw:1.00xh;0,0&resize=1200:*" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Face Wash</h4>
+    <h5>&#8377;399</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+
+  <div class="col text-center">
+    <img src="https://i5.walmartimages.com/asr/b901c419-7bd5-4951-887f-5eb09a06532c.b7e490b1a09c9d8c77ced224f7692a6c.jpeg" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Sunscreen</h4>
+    <h5>&#8377;799</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+
+  <div class="col text-center">
+    <img src="https://i.pinimg.com/736x/a2/02/d7/a202d7eb6a88a110bd5bbad8e9f1d2a2--skin-routine-facial-toner.jpg" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Toner</h4>
+    <h5>&#8377;799</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+    <div class="col text-center">
+    <img src="https://images.pexels.com/photos/8131586/pexels-photo-8131586.jpeg?cs=srgb&dl=pexels-ron-lach-8131586.jpg&fm=jpg" class="img-fluid rounded product-img">
+    <h4 class="mt-2 fw-bold">Serum</h4>
+    <h5>&#8377;119</h5>
+    <button class="btn btn-success w-75 btn-cart">Add to Cart</button>
+  </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+</html>
